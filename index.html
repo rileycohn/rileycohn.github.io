@@ -147,7 +147,7 @@
 	
     <script>
  
-        var fireBaseRef = new Firebase("https://hack-az-firebase.firebaseio.com");
+        var fireBaseRef = new Firebase("https://hack-az-firebase.firebaseio.com/Jobs");
  
         $("#submit-btn").bind("click", function() {
             var companyName = document.getElementById('a').value;
@@ -167,6 +167,13 @@
                 fireBaseRef.push({CompanyName: companyName, PositionTitle: posTitle, PositionDescription: posDescription, ContactName: contactName, ContactEmail: contactEmail, ContactLink: contactLink, Latitude: lat, Longitude: lng});
 
             }
+			
+			document.getElementById('a').value = "";
+			document.getElementById('b').value = "";
+			document.getElementById('c').value = "";
+			document.getElementById('d').value = "";
+			document.getElementById('e').value = "";
+			document.getElementById('f').value = "";
  
             return false;
         });
