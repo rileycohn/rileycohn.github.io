@@ -14,6 +14,12 @@
 	label { display: table-cell; }
 	input { display: table-cell; }
 	body  { background-color: #0B5993 }
+	label, h1, #mission, #slogan { color: white;
+			text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;	}
 	
 	#map {
         height: 500px;
@@ -24,8 +30,14 @@
  
     <div class="container" style="width: 100%; overflow: hidden;">
  
-        <h1><b><i>Will You Please Hire . Me</i></b></h1>
-		<h3>Grab the attention of talented individuals right at your doorstep.</h3>
+        <h1><b><i>Welcome to WillYouPleaseHire.Me</i></b></h1>
+		<div>
+			<div style="width: 600px; float: left" <h3 id="slogan">A new and exciting way to find <em>your</em> perfect candidate!</h3></div>
+			<div id="mission" style="margin-left: 620px">Our Mission: Connect employers with potential applicants that are in the area and looking for work.
+											We hope to ease the struggles of small business owners trying to connect with strong 
+											candidates without the heavy recruiting infrastructures that large companies have at their disposal. 
+											</div>
+		</div>
 		<hr>
  
 			<div class="form" style="width: 600px; float: left;">
@@ -42,7 +54,7 @@
 					<br>
 					<p>
 						<label for="c">Position Description:</label>
-						<textarea id="c" name="Description" value="" style = "width: 300px; height: 300px"></textarea>
+						<textarea id="c" name="Description" value="" style = "width: 300px; height: 250px"></textarea>
 					</p>
 					<br>
 					<p>
