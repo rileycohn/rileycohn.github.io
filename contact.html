@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" type="text/css" href="style.css">
+     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
+</head>
+<body>
+    <div id = "wrapper">
+        <header>
+             <h1>Questions/Comments/Concerns?</h1>
+        </header>
+       
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "wip.html">What is Programming?</a></li>
+                <li class="dropdown"><a href = "types.html">Types of Programming</a>
+                <div class="dropdown-content">
+                      <a href="webdev.html">Web Devlopment</a>
+                      <a href="mobiledev.html">Mobile Development</a>
+                      <a href="deskdev.html">Desktop Development</a></div></li>
+                <li><a href = "ide.html">The IDE</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Leave us feedback!</h2>
+            <br>
+            <form id = "contactForm" method="post" action = "http://webdevbasics.net/scripts/demo.php">
+                
+                  <label for="Name">Your name:</label>
+                  <input type="text" name="Name">
+                  <br><br>
+                  
+                  <label for ="email">E-mail:</label>
+                  <input type="email" name="email">
+                  <br><br>
+                  
+                  <label>Rate My Site!</label>
+                  <input type="radio" name ="stars" value="1">1
+                  <input type="radio" name ="stars" value="2">2
+                  <input type="radio" name ="stars" value="3">3
+                  <input type="radio" name ="stars" value="4">4
+                  <input type="radio" name ="stars" value="5" checked>5
+                  <br><br>
+                  
+                  <label>Comments:</label>
+                  <textarea name="textarea" id="commentBox"></textarea>
+                  <br><br>
+                  <input type="submit" value="Submit">
+            </form>
+            
+            <footer>
+                Copyright &copy 2017 Riley Cohn <br>
+                <a href="mailto:riley@cohn.com" target="_top">riley@cohn.com</a>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
