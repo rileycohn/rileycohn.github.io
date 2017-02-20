@@ -158,8 +158,8 @@ h3
 
 .top
 {
-    display: inline;
-    height: 500px;
+    height: 250px;
+    width: 100%;
 }
 
 #who
@@ -247,6 +247,42 @@ input[type="submit"]
 {
     margin-left: 130px;
 }
+
+#webdevpic
+{
+    float:left;
+    padding: 15px;
+}
+
+#webdevtext
+{
+    height: 250px;
+}
+
+#map
+{
+    width: 600px;
+    height: 300px;
+}
+
+#maptext
+{
+    text-align: left;
+}
+
+
+#maptable td
+{
+    text-align: left;
+}
+
+#jscode
+{
+    width: 400px;
+    height: 200px;
+    padding-left: 150px
+}
+
 
 @media only screen and (max-width: 64em)
 {

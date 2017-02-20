@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Web Devlopment</title>
+    <title>Web Development</title>
     <meta charset="utf-8">
     <link rel = "stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
@@ -28,12 +28,75 @@
         </nav>
         <main>
             <h2>What is Web Development?</h2>
-            
+                    <div id = "webdevpic">
+                        <img src ="webdev.png" width="300" height="200">
+                    </div>
+                    <div id = webdevtext>
+                        Web development is a very important category in the field of programming. Every website you visit every single day is thanks to 
+                        web developers. As a matter of fact, this website you're looking at right now wouldn't be possible without the help of the most 
+                        basic website development tool, HTML. HTML (HyperText Markup Language), although not technically a "programming" language, is the basic building
+                        block for putting content on the web.
+                        
+                        <br>
+                    </div>
+                        
+                       <p>As mentioned above, the main technology used for front end development is some variation of HTML. The backend of website development is when things get interesting.
+                        In a post found online <a href ="https://www.cleverism.com/programming-languages-web-development/">here</a> the author provides a list of the top 15 back end programming languages.
+                        He also speaks more about the benefits of each one, if you are interested.</p>
+                    <table id = "maptable">   
+                        <tr>
+                            <td width="200">
+                                <ol>
+                                    <li>JavaScript</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>CSS</li>
+                                    <li>PHP</li>
+                                    <li>Ruby</li>
+                                    <li>C++</li>
+                                    <li>C</li>
+                                    <li>Shell</li>
+                                    <li>C#</li>
+                                    <li>Objective C</li>
+                                    <li>R</li>
+                                    <li>VimL</li>
+                                    <li>Go</li>
+                                    <li>Perl</li>
+                                </ol>
+                            </td>
+                            <td align="center"><div id="map" onload="initMap()"></div></td>
+                            <td>
+                                <p id="maptext">An example of the use of JavaScript can be seen right here on this webpage. With plain HTML, there
+                                is no way to place a map from google onto your website. But with JavaScript, this process is extremly simple. 
+                                Here is all the code necessary to bring in a google map onto your website, this shows just how powerful and important programming 
+                                is in the field of web development.</p>
+                                <img id="jscode" src ="jscode.JPG">
+                                
+                            </td>
+                </tr>
+            </table> 
             <footer>
                 Copyright &copy 2017 Riley Cohn <br>
                 <a href="mailto:riley@cohn.com" target="_top">riley@cohn.com</a>
             </footer>
         </main>
     </div>
+    
+    <script>
+      function initMap() {
+        var uluru = {lat: 33.424564, lng: -111.928001};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTG5zbEr3TT4uuTFK7UqX7wLvM2MSNg2A&callback=initMap">
+    </script>
 </body>
 </html>
