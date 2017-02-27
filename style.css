@@ -152,7 +152,7 @@ h2
 
 h3
 {
-    color: #000033;
+    color: #000000;
     font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -261,7 +261,7 @@ input[type="submit"]
 
 #map
 {
-    width: 600px;
+    width: 500px;
     height: 300px;
 }
 
